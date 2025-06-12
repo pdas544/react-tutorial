@@ -5,7 +5,7 @@ import Footer from "./components/Footer";
 const App = () => {
   
   return (
-  <section>
+  <section class="container mx-auto p-4">
     <Header/>
  
     <Greet />
