@@ -1,14 +1,16 @@
 import Greet from "./components/Greet";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import ProductInfo from "./components/ProductInfo";
 
 const App = () => {
   
   return (
-  <section class="container mx-auto p-4">
+  <section className="container mx-auto p-4 mt-4">
     <Header/>
  
     <Greet />
+    <ProductInfo />
 
     <Footer/>
   </section>

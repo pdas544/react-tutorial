@@ -1,13 +1,11 @@
-function Footer() {
+const Footer = () => {
   return (
-    <footer className="bg-gray-800 text-white py-4">
-      <div className="container mx-auto text-center">
-        <p className="text-sm">
+    <footer class="p-2 bg-primary mt-4 text-white position-fixed bottom-0 start-0 end-0">
+      <div class="container mx-auto text-center">
+        <p class="mb-2">
           &copy; {new Date().getFullYear()} My Website. All rights reserved.
         </p>
-        <p className="text-xs mt-2">
-          Built with love using React and Tailwind CSS.
-        </p>
+       
       </div>
     </footer>
   );
