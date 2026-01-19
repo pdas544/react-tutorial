@@ -1,12 +1,18 @@
-# React + Vite
+# React For Beginners
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple React project to demonstrate the basics of React.js, including components, props, state, and event handling.
 
-Currently, two official plugins are available:
+1) One component always returns a single parent element.
+2) Parent **Element** can have multiple child elements.
+3) Must close all tags inside a JSX file.
+4) classes are defined using **className** attribute instead of class.
+5) for attribute is defined using **htmlFor** attribute instead of for.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Expressions in JSX
+ - You can embed any JavaScript expression in JSX by wrapping it in curly braces `{}`.
+ - Variables are evaluated inside the curly braces.
+ - Components are created using the following steps:
+   - register the component using the arrow function (check componenets/Greet.jsx)
+   - export the component
+   - call the component inside App.jsx file
+   - the component file ends with .jsx extension
