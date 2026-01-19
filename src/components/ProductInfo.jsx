@@ -6,11 +6,11 @@ const ProductInfo = () => {
         "availability": "In Stock"
     };
     return (
-        <div class="container mx-auto p-4 border rounded shadow-md mt-4">
-            <h2 class="display-6">Product: {product.name}</h2>
-            <p class="display-6"> Price:${product.price}</p>
-            <p class="display-6">Description: {product.description}</p>
-            <p class="display-6">Availability: {product.availability}</p>
+        <div className="container mx-auto p-4 border rounded shadow-md mt-4">
+            <h2 ><span className="display-6">Product:</span> {product.name}</h2>
+            <h2> <span className="display-6">Price:$</span>{product.price}</h2>
+            <h2><span className="display-6">Description: </span>{product.description}</h2>
+            <h2><span className="display-6">Availability: </span>{product.availability}</h2>
         </div>
     );
 }

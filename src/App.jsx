@@ -2,6 +2,7 @@ import Greet from "./components/Greet";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import ProductInfo from "./components/ProductInfo";
+import Lists from "./components/Lists";
 
 const App = () => {
   
@@ -11,6 +12,7 @@ const App = () => {
  
     <Greet />
     <ProductInfo />
+      <Lists />
 
     <Footer/>
   </section>
