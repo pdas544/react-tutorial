@@ -1,5 +1,7 @@
 import Person from "./components/Person";
 import Product from "./components/Product";
+import Weather from "./components/Weather";
+import UserStatus from "./components/UserStatus";
 
 const App = () => {
   
@@ -9,6 +11,16 @@ const App = () => {
       </div>
       <div>
           <Product prodName="Headphones" prodPrice={99.99}/>
+      </div>
+
+      <div>
+          <h4>Conditional Rendering with one prop</h4>
+          <Weather temp={26}/>
+      </div>
+
+      <div>
+          <h4>Conditional Rendering with multiple props</h4>
+          <UserStatus isLoggedIn={true} isAdmin={false}/>
       </div>
 
   </div>
