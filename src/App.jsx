@@ -1,22 +1,19 @@
-import Greet from "./components/Greet";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
-import ProductInfo from "./components/ProductInfo";
-import Lists from "./components/Lists";
+import Person from "./components/Person";
+import Product from "./components/Product";
 
 const App = () => {
   
-  return (
-  <section className="container mx-auto p-4 mt-4">
-    <Header/>
- 
-    <Greet />
-    <ProductInfo />
-      <Lists />
+  return <div className="">
+      <div className="mt-4 mb-2 border p-1 w-50">
+      <Person name="Priyabrata" age="24"/>
+      </div>
+      <div>
+          <Product prodName="Headphones" prodPrice={99.99}/>
+      </div>
 
-    <Footer/>
-  </section>
-    );
+  </div>
+
+
 }
 
 export default App;
