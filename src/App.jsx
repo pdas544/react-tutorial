@@ -1,31 +1,35 @@
-import Person from "./components/Person";
-import Product from "./components/Product";
-import Weather from "./components/Weather";
-import UserStatus from "./components/UserStatus";
+
+import { useState } from "react";
+
 
 const App = () => {
-  
-  return <div className="">
-      <div className="mt-4 mb-2 border p-1 w-50">
-      <Person name="Priyabrata" age="24"/>
-      </div>
-      <div>
-          <Product prodName="Headphones" prodPrice={99.99}/>
-      </div>
+    const [movies, setMovie] = useState([
+        {title: "The Matrix",
+        ratings: 8.7},
+        {title: "Inception",
+        ratings: 8.8},
+        {title: "Interstellar",
+        ratings: 8.6}
+       
+    ]);
 
-      <div>
-          <h4>Conditional Rendering with one prop</h4>
-          <Weather temp={26}/>
-      </div>
+    const handleClick = () =>{
+        setMovie([...movies, {title: "The Dark Knight", ratings: 9.0}]);
+    }
 
-      <div>
-          <h4>Conditional Rendering with multiple props</h4>
-          <UserStatus isLoggedIn={true} isAdmin={false}/>
-      </div>
+    
 
-  </div>
-
-
+    return (
+        <div className="container-fluid p-2">
+            {movies.map((m) => (
+                <ul>
+                    <li key={m.title}>{m.title}</li>
+                </ul>
+            ))}
+            <button onClick={handleClick} class="btn btn-primary">Add Movie</button>
+        </div>
+    );
+   
 }
 
 export default App;

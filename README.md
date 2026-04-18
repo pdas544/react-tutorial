@@ -16,3 +16,10 @@ A simple React project to demonstrate the basics of React.js, including componen
    - export the component
    - call the component inside App.jsx file
    - the component file ends with .jsx extension
+
+## Hooks
+- Functions starting with `use` keyword are known as Hooks. Two types of hooks: built-in and user-defined.
+- `useState` hook allows the component to remember information and display it.
+- Step 1: `import { useState } from 'react';`
+- Step 2: `function MyButton(){ const [count, setCount] = useState(0);`
+- useState gives two things, count: Initial value with 0, setCount: function to change the value.
